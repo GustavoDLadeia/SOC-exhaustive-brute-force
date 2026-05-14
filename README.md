@@ -1,48 +1,48 @@
-# Brute Force Exaustivo
+# Exhaustive Brute Force
 
-## Cenário
+## Scenario
 
-Investigação envolvendo múltiplas tentativas de autenticação seguidas de sucesso, indicando possível ataque de brute force e risco de comprometimento de conta.
-
----
-
-## Resumo
-
-Múltiplas tentativas falhas de login em curto período de tempo foram detectadas para o usuário `joao.silva` a partir de um IP externo (`103.45.78.22`), originado de uma localização incomum para o sistema (**Rússia**), seguidas de uma tentativa de login bem-sucedida em horário atípico (`03:12 AM`).
+Investigation involving multiple authentication attempts followed by a successful login, indicating a possible brute force attack and risk of account compromise.
 
 ---
 
-## Evidências
+## Summary
 
-| Campo | Valor |
+Multiple failed login attempts within a short period of time were detected for the user `joao.silva` from an external IP (`103.45.78.22`), originating from an unusual location for the system (**Russia**), followed by a successful login attempt at an atypical time (`03:12 AM`).
+
+---
+
+## Evidence
+
+| Field | Value |
 |---|---|
-| Usuário | `joao.silva` |
-| IP de origem | `103.45.78.22` |
-| Localização | Rússia |
-| Tentativas falhadas | 20 em 3 minutos |
-| Intervalo entre tentativas | Poucos segundos |
-| Login bem-sucedido após as falhas | Sim |
-| Horário do login | 03:12 AM |
+| User | `joao.silva` |
+| Source IP | `103.45.78.22` |
+| Location | Russia |
+| Failed attempts | 20 in 3 minutes |
+| Interval between attempts | A few seconds |
+| Successful login after failures | Yes |
+| Login time | `03:12 AM` |
 
 ---
 
-## Análise
+## Analysis
 
-- O volume elevado de tentativas de login em curto período é consistente com comportamento de **brute force**.
-- A origem geográfica incomum e o horário atípico reforçam a suspeita de atividade maliciosa.
-- O sucesso no login após múltiplas falhas aumenta significativamente o risco de comprometimento da conta.
-
----
-
-## Conclusão
-
-Atividade suspeita compatível com ataque de brute force com possível comprometimento de conta.
+- The high volume of login attempts within a short period is consistent with **brute force** behavior.
+- The unusual geographic origin and atypical login time reinforce the suspicion of malicious activity.
+- The successful login after multiple failed attempts significantly increases the risk of account compromise.
 
 ---
 
-## Ações Recomendadas
+## Conclusion
 
-- Resetar a senha do usuário
-- Verificar atividades realizadas após o login
-- Bloquear temporariamente o IP de origem
-- Recomendar uso de autenticação multifator (**MFA**)
+Suspicious activity consistent with a brute force attack with possible account compromise.
+
+---
+
+## Recommended Actions
+
+- Reset the user’s password
+- Verify activities performed after the login
+- Temporarily block the source IP
+- Recommend the use of multi-factor authentication (**MFA**)
